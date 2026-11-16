@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitZone Admin Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+    <header>
+        <h2>FIT<span>ZONE</span> ADMIN</h2>
+        <a href="../index.html">Back to Website</a>
+    </header>
+
+    <main>
+        <h1>Admin Dashboard</h1>
+        <p>Manage your gym registrations.</p>
+
+        <div class="stats">
+            <div class="stat-card">
+                <h3>Total Members</h3>
+                <h2 id="totalMembers">0</h2>
+            </div>
+
+            <div class="stat-card">
+                <h3>Basic Members</h3>
+                <h2 id="basicMembers">0</h2>
+            </div>
+
+            <div class="stat-card">
+                <h3>Standard Members</h3>
+                <h2 id="standardMembers">0</h2>
+            </div>
+
+            <div class="stat-card">
+                <h3>Premium Members</h3>
+                <h2 id="premiumMembers">0</h2>
+            </div>
+        </div>
+
+        <section class="members">
+            <h2>Registered Members</h2>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Membership</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="memberList"></tbody>
+                </table>
+            </div>
+
+            <p id="emptyMessage"></p>
+        </section>
+    </main>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
